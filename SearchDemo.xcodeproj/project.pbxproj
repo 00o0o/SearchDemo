@@ -13,6 +13,11 @@
 		B32345781D811EC000D85286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32345761D811EC000D85286 /* Main.storyboard */; };
 		B323457A1D811EC000D85286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32345791D811EC000D85286 /* Assets.xcassets */; };
 		B323457D1D811EC000D85286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B323457B1D811EC000D85286 /* LaunchScreen.storyboard */; };
+		B32345861D811EF000D85286 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B32345851D811EF000D85286 /* SearchBar.m */; };
+		B32345891D8120C000D85286 /* SearchLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = B32345881D8120C000D85286 /* SearchLogic.m */; };
+		B32345961D814A5300D85286 /* BaseSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B32345951D814A5300D85286 /* BaseSearchBar.m */; };
+		B32345991D814F4700D85286 /* SearchLogic2.m in Sources */ = {isa = PBXBuildFile; fileRef = B32345981D814F4700D85286 /* SearchLogic2.m */; };
+		B323459C1D81500C00D85286 /* HomeSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B323459B1D81500C00D85286 /* HomeSearchBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		B32345791D811EC000D85286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B323457C1D811EC000D85286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B323457E1D811EC000D85286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32345841D811EF000D85286 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
+		B32345851D811EF000D85286 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
+		B32345871D8120C000D85286 /* SearchLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchLogic.h; sourceTree = "<group>"; };
+		B32345881D8120C000D85286 /* SearchLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchLogic.m; sourceTree = "<group>"; };
+		B32345931D8147EF00D85286 /* SearchProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchProtocol.h; sourceTree = "<group>"; };
+		B32345941D814A5300D85286 /* BaseSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSearchBar.h; sourceTree = "<group>"; };
+		B32345951D814A5300D85286 /* BaseSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSearchBar.m; sourceTree = "<group>"; };
+		B32345971D814F4700D85286 /* SearchLogic2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchLogic2.h; sourceTree = "<group>"; };
+		B32345981D814F4700D85286 /* SearchLogic2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchLogic2.m; sourceTree = "<group>"; };
+		B323459A1D81500C00D85286 /* HomeSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSearchBar.h; sourceTree = "<group>"; };
+		B323459B1D81500C00D85286 /* HomeSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSearchBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 		B323456C1D811EC000D85286 /* SearchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B323459D1D8153D300D85286 /* SearchBar */,
 				B32345701D811EC000D85286 /* AppDelegate.h */,
 				B32345711D811EC000D85286 /* AppDelegate.m */,
 				B32345731D811EC000D85286 /* ViewController.h */,
@@ -67,6 +84,12 @@
 				B323457B1D811EC000D85286 /* LaunchScreen.storyboard */,
 				B323457E1D811EC000D85286 /* Info.plist */,
 				B323456D1D811EC000D85286 /* Supporting Files */,
+				B32345871D8120C000D85286 /* SearchLogic.h */,
+				B32345881D8120C000D85286 /* SearchLogic.m */,
+				B32345971D814F4700D85286 /* SearchLogic2.h */,
+				B32345981D814F4700D85286 /* SearchLogic2.m */,
+				B323459A1D81500C00D85286 /* HomeSearchBar.h */,
+				B323459B1D81500C00D85286 /* HomeSearchBar.m */,
 			);
 			path = SearchDemo;
 			sourceTree = "<group>";
@@ -77,6 +100,18 @@
 				B323456E1D811EC000D85286 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B323459D1D8153D300D85286 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				B32345841D811EF000D85286 /* SearchBar.h */,
+				B32345851D811EF000D85286 /* SearchBar.m */,
+				B32345941D814A5300D85286 /* BaseSearchBar.h */,
+				B32345951D814A5300D85286 /* BaseSearchBar.m */,
+				B32345931D8147EF00D85286 /* SearchProtocol.h */,
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32345991D814F4700D85286 /* SearchLogic2.m in Sources */,
+				B32345961D814A5300D85286 /* BaseSearchBar.m in Sources */,
+				B32345891D8120C000D85286 /* SearchLogic.m in Sources */,
 				B32345751D811EC000D85286 /* ViewController.m in Sources */,
+				B32345861D811EF000D85286 /* SearchBar.m in Sources */,
 				B32345721D811EC000D85286 /* AppDelegate.m in Sources */,
+				B323459C1D81500C00D85286 /* HomeSearchBar.m in Sources */,
 				B323456F1D811EC000D85286 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realswifter.SearchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realswifter.SearchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
